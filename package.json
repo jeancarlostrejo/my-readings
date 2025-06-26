@@ -1,0 +1,17 @@
+{
+  "name": "book-reading",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tailwindcss -i ./src/css/input.css -o ./src/css/output.css --minify",
+    "dev": "npx tailwindcss -i ./src/css/input.css -o ./src/css/output.css --watch"
+  },
+  "keywords": ["tailwindcss", "css", "web development", "book"],
+  "author": "Jean Carlos Trejo",
+  "license": "ISC",
+  "description": "Esta es una página web sencilla que muestra el libro que estoy leyendo actualmente, utilizando Tailwind CSS para el diseño y estilo.",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.11",
+    "tailwindcss": "^4.1.11"
+  }
+}
