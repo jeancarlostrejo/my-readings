@@ -1,15 +1,19 @@
-# 📚 El libro que estoy leyendo
-
-Este proyecto es una página web personal donde muestro el libro que estoy leyendo actualmente, con detalles como portada, autor, género, año de publicación, progreso de lectura y un resumen. Además de mostrar los libros que tengo en mi lista de pendientes por leer.
+# 📚 Mi biblioteca 📚
+---
+Este proyecto es una sitio web personal donde comparto mi gusto por la lectura. En ella podrás conocer y dar seguimiento al libro que actualmente me encuentro leyendo; además de echarle un vistazo a la lista de libros que tengo pendientes por leer. Proximamente estaré implementando una sección para mostrar los libros que ya he leído hasta la fecha.
 
 ---
+
 ## 🚀 Tecnologías utilizadas
+
 - HTML5
 - Tailwind CSS
-- [Opcional] GitHub Pages para despliegue
+- Estoy desarrollando la version en Laravel del proyecto, que incluirá funcionalidades para la gestión de los libros.
 
 ---
+
 ## 🛠️ Instalación y uso
+
 1. Clona el repositorio:
    ```bash
    git clone <url-del-repo>
@@ -31,9 +35,13 @@ Este proyecto es una página web personal donde muestro el libro que estoy leyen
 4. Abre `index.html` en tu navegador.
 
 ---
+
 ## 🌐 Despliegue en GitHub Pages
-Si quieres publicar tu sitio en GitHub Pages, asegúrate de que el archivo `output.css` esté en el repositorio y sigue los pasos de GitHub Pages para proyectos estáticos.
+
+Visita el siguiente enlace para ver el sitio: [Ver sitio](https://jeancarlostrejo.github.io/my-readings/welcome.html)
 
 ---
+
 ## 📄 Notas
+
 - El archivo `output.css` es generado automáticamente por Tailwind. No lo borres si vas a desplegar en GitHub Pages.
