@@ -3,11 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mi Biblioteca - Tu Portal de Lectura</title>
+    <title>Mi Biblioteca - Inicio</title>
     <link rel="stylesheet" href="./src/css/output.css" />
-    <link rel="stylesheet" href="./src/css/custom.css" />
     <link rel="shortcut icon" href="./src/images/lectura.png" />
-    <link rel="stylesheet" href="./src/css/custom.css" />
+    <!-- <link rel="stylesheet" href="./src/css/custom.css" /> -->
+    <style>
+      .fondo {
+        background-image: url("./src/images/fondo-light.webp");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+      }
+    </style>
   </head>
 
   <body
@@ -20,35 +27,38 @@
         <div class="flex justify-between h-16">
           <div class="flex-shrink-0 flex items-center">
             <a
-              href="index.html"
+              href="/"
               class="text-xl font-bold text-blue-500 dark:text-gray-200 flex items-center"
             >
               <img
                 src="./src/images/lectura.png"
                 alt="Logo Mi Biblioteca"
                 class="h-11 w-11 mr-2"
-                style="height: 44px; width: 44px"
               />
               Mi Biblioteca
             </a>
           </div>
 
+          <!-- Navbar desktop -->
           <div class="hidden md:flex md:items-center md:ml-6 space-x-4">
             <a
-              href="current-reading.html"
-              class="text-gray-700 dark:text-gray-200 hover:bg-blue-600 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200"
-              >¿Qué libro estoy leyendo?</a
+              href="./current-reading.html"
+              class="px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 text-gray-700 dark:text-gray-200 hover:bg-blue-600 hover:text-white"
             >
+              ¿Qué libro estoy leyendo?
+            </a>
+            <a
+              href="./upcoming.html"
+              class="px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 text-gray-700 dark:text-gray-200 hover:bg-blue-600 hover:text-white"
+            >
+              Próximas lecturas
+            </a>
             <a
               href="#"
-              class="text-gray-700 dark:text-gray-200 hover:bg-blue-600 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200"
-              >Próximas lecturas</a
+              class="px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 text-gray-700 dark:text-gray-200 hover:bg-blue-600 hover:text-white"
             >
-            <a
-              href="#"
-              class="text-gray-700 dark:text-gray-200 hover:bg-blue-600 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200"
-              >Libros leídos</a
-            >
+              Libros leídos
+            </a>
           </div>
 
           <div class="-mr-2 flex items-center md:hidden">
@@ -97,78 +107,89 @@
         </div>
       </div>
 
+      <!-- Navbar mobile -->
       <div class="md:hidden hidden" id="mobile-menu">
         <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
           <a
-            href="current-reading.html"
-            class="text-gray-700 dark:text-gray-200 hover:bg-blue-600 hover:text-white block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200"
-            >¿Qué libro estoy leyendo?</a
+            href="./current-reading.html"
+            class="block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200 text-gray-700 dark:text-gray-200 hover:bg-blue-600 hover:text-white"
           >
+            ¿Qué libro estoy leyendo?
+          </a>
+
+          <a
+            href="./upcoming.html"
+            class="block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200 text-gray-700 dark:text-gray-200 hover:bg-blue-600 hover:text-white"
+          >
+            Proximas lecturas
+          </a>
           <a
             href="#"
-            class="text-gray-700 dark:text-gray-200 hover:bg-blue-600 hover:text-white block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200"
-            >Próximas lecturas</a
+            class="block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200 text-gray-700 dark:text-gray-200 hover:bg-blue-600 hover:text-white"
           >
-          <a
-            href="#"
-            class="text-gray-700 dark:text-gray-200 hover:bg-blue-600 hover:text-white block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200"
-            >Libros leídos</a
-          >
+            Libros leídos
+          </a>
         </div>
       </div>
     </nav>
 
-    <div class="overlay absolute inset-0 z-0"></div>
+    <main class="flex-grw">
+      <div class="fixed inset-0 bg-black/50 z-1"></div>
 
-    <div class="main-content-wrapper relative z-10 mt-20">
-      <header class="text-center px-4 max-w-4xl mx-auto animate-fade-in-scale">
-        <h1
-          class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-blue-500 dark:text-gray-200 mb-6 leading-tight drop-shadow-lg"
-        >
-          📚 Mi biblioteca 📚
-        </h1>
-        <p
-          class="text-xl md:text-2xl text-white dark:text-gray-200 mb-8 font-light leading-relaxed"
-        >
-          Mi espacio personal para explorar el fascinante mundo de los libros.
-        </p>
-      </header>
-
-      <main
-        class="bg-gray-100/90 dark:bg-gray-800/90 p-8 md:p-10 rounded-lg shadow-2xl max-w-3xl mx-auto text-center animate-slide-in-right transform transition-all duration-500 hover:scale-101"
+      <div
+        class="w-full flex flex-col justify-center p-8 relative z-10 mt-16 gap-4"
       >
-        <h2
-          class="text-2xl md:text-3xl font-bold text-blue-600 dark:text-gray-200 mb-6"
+        <header
+          class="text-center w-full px-4 max-w-4xl mx-auto animate-blurred-fade-in"
         >
-          ¿Qué encontrarás aquí?
-        </h2>
+          <h1
+            class="text-4xl sm:text-6xl font-extrabold text-blue-500 dark:text-gray-200 mb-6 leading-tight drop-shadow-lg"
+          >
+            📚 Mi biblioteca 📚
+          </h1>
+          <p
+            class="text-2xl sm:text-3xl text-white dark:text-gray-200 font-light leading-relaxed"
+          >
+            Mi espacio personal para explorar el fascinante mundo de los libros.
+          </p>
+        </header>
+
         <div
-          class="space-y-4 text-lg md:text-xl text-gray-700 dark:text-gray-200 leading-relaxed"
+          class="bg-gray-100/90 dark:bg-gray-800/80 p-8 md:p-10 rounded-lg shadow-2xl max-w-3xl mx-auto text-center animate-fade-in animate-duration-1000 animate-delay-[1250ms] hover:scale-102 duration-300"
         >
-          <p>
-            Este sitio es un reflejo de mi viaje literario. Aquí comparto
-            contigo los libros que me están acompañando en este momento,
-            aquellos que esperan ansiosamente en mi lista de "próximas lecturas"
-            y el valioso catálogo de todas las obras que he tenido el placer de
-            finalizar.
-          </p>
-          <p>
-            Mi objetivo es mostrarte un espacio donde podamos conectar a través
-            de las historias, inspirar nuevas lecturas y, quién sabe, ¡descubrir
-            juntos el próximo gran libro!
-          </p>
+          <h2
+            class="text-2xl sm:text-3xl font-bold text-blue-600 dark:text-gray-200 mb-6"
+          >
+            ¿Qué encontrarás aquí?
+          </h2>
+          <div
+            class="space-y-4 text-lg sm:text-xl text-gray-700 dark:text-gray-200 leading-relaxed mb-8"
+          >
+            <p>
+              Este sitio es un reflejo de mi viaje literario. Aquí comparto
+              contigo los libros que me están acompañando en este momento,
+              aquellos que esperan ansiosamente en mi lista de "próximas
+              lecturas" y el valioso catálogo de todas las obras que he tenido
+              el placer de finalizar.
+            </p>
+            <p>
+              Mi objetivo es mostrarte un espacio donde podamos conectar a
+              través de las historias, inspirar nuevas lecturas y, quién sabe,
+              ¡descubrir juntos el próximo gran libro!
+            </p>
+          </div>
+          <a
+            href="./current-reading.html"
+            class="text-base sm:text-xl inline-block bg-blue-600 hover:bg-blue-700 text-gray-200 font-bold py-3 px-8 rounded-full shadow-lg transform transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:focus:ring-offset-gray-800"
+          >
+            Descubre mi lectura actual 🚀
+          </a>
         </div>
-        <a
-          href="current-reading.html"
-          class="mt-8 inline-block bg-blue-600 hover:bg-blue-700 text-gray-200 font-bold py-3 px-8 rounded-full shadow-lg transform transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:focus:ring-offset-gray-800"
-        >
-          Descubre mi lectura actual 🚀
-        </a>
-      </main>
-    </div>
+      </div>
+    </main>
 
     <footer
-      class="w-full py-4 z-10 text-center text-gray-200 dark:text-gray-400 text-xl animate-slide-in-up"
+      class="w-full mb-10 py-4 z-10 text-center text-gray-200 dark:text-gray-100 text-lg"
     >
       Hecho con <span class="text-red-500 text-lg">&hearts;</span> por
       <a

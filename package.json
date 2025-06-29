@@ -6,11 +6,17 @@
     "build": "npx tailwindcss -i ./src/css/input.css -o ./src/css/output.css --minify",
     "dev": "npx tailwindcss -i ./src/css/input.css -o ./src/css/output.css --watch"
   },
-  "keywords": ["tailwindcss", "css", "web development", "book"],
+  "keywords": [
+    "tailwindcss",
+    "css",
+    "web development",
+    "book"
+  ],
   "author": "Jean Carlos Trejo",
   "license": "ISC",
   "description": "Esta es una página web sencilla que muestra el libro que estoy leyendo actualmente, utilizando Tailwind CSS para el diseño y estilo.",
   "dependencies": {
+    "@midudev/tailwind-animations": "^0.2.0",
     "@tailwindcss/cli": "^4.1.11",
     "tailwindcss": "^4.1.11"
   }
