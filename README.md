@@ -1,12 +1,11 @@
 # 📚 El libro que estoy leyendo
 
-Este proyecto es una página web personal donde muestro el libro que estoy leyendo actualmente, con detalles como portada, autor, género, año de publicación, progreso de lectura y un resumen.
+Este proyecto es una página web personal donde muestro el libro que estoy leyendo actualmente, con detalles como portada, autor, género, año de publicación, progreso de lectura y un resumen. Además de mostrar los libros que tengo en mi lista de pendientes por leer.
 
 ---
 ## 🚀 Tecnologías utilizadas
 - HTML5
 - Tailwind CSS
-- CSS personalizado (animaciones)
 - [Opcional] GitHub Pages para despliegue
 
 ---
@@ -38,4 +37,3 @@ Si quieres publicar tu sitio en GitHub Pages, asegúrate de que el archivo `outp
 ---
 ## 📄 Notas
 - El archivo `output.css` es generado automáticamente por Tailwind. No lo borres si vas a desplegar en GitHub Pages.
-- Las animaciones personalizadas están en `src/css/custom-animations.css`.
