@@ -32,7 +32,7 @@ Este proyecto es una sitio web personal donde comparto mi gusto por la lectura. 
      ```bash
      npm run build
      ```
-4. Abre `index.html` en tu navegador.
+4. Abre el archivo `welcome.html` en tu navegador.
 
 ---
 
